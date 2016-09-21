@@ -58,13 +58,17 @@ subscribe_rss: /feed.xml
 markdown: kramdown
 kramdown:
     input: GFM
-highlighter: rouge
+    use_coderay: true
+    syntax_highlighter: rouge
+    coderay:
+        coderay_line_numbers:  nil
 paginate: 8
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 gems:
+    - coderay
     - rouge
 #     - jekyll-html-pipeline
     - jekyll-paginate
